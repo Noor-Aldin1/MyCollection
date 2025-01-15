@@ -11,6 +11,9 @@
   .offcanvas__header--menu__open {
     display: block;
   }
+  .lotti {
+    display: none;
+  }
 }
 
 .offcanvas__header--menu__open--svg {
