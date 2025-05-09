@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth" dir="ltr">
-  <!-- Mirrored from themihub.com/html/morex-demo/morex/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 Dec 2024 22:54:37 GMT -->
+<!-- Mirrored from themihub.com/html/morex-demo/morex/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 Dec 2024 22:54:37 GMT -->
 
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noor Aldin Abo Alsaid</title>
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="portfolio/assets/images/personal.png"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="portfolio/assets/images/personal.png" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&amp;display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&amp;display=swap"
+        rel="stylesheet" />
 
     <!-- Plugins css -->
     <link rel="stylesheet" href="portfolio/assets/css/mobilemenu.css" />
     <!-- <link rel="stylesheet" href="./assets/css/glightbox.min.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="portfolio/assets/css/styles.css" />
 
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.3/dist/sweetalert2.all.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.3/dist/sweetalert2.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.3/dist/sweetalert2.min.css" rel="stylesheet" />
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.7/dist/sweetalert2.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
     <meta name="csrf-token" content="" />
 
     <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (
-        localStorage.getItem("theme-color") === "dark" ||
-        (!("theme-color" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      }
-      if (localStorage.getItem("theme-color") === "light") {
-        document.documentElement.classList.remove("dark");
-      }
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (
+            localStorage.getItem("theme-color") === "dark" ||
+            (!("theme-color" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.documentElement.classList.add("dark");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.documentElement.classList.remove("dark");
+        }
     </script>
-  </head>
- 
+</head>
+
 <body class="font-rubik dark:bg-dark_primary_bg">
 
     <!-- Preloader start -->
@@ -90,133 +82,131 @@
 
     </div>
     <!-- Dark and light button end -->
-           <!-- Header area start -->
-           <header class="absolute top-0 left-0 w-full">
-            <div class="py-5 header__sticky">
-                <div class="container mx-auto">
-                    <div class="flex items-center justify-between">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img class="hidden dark:block" src="assets/images/logo-light.png" alt="">
-                                <img class="dark:hidden" src="assets/images/logo.png" alt="">
-                            </a>
-                        </div>
-                        <div class="flex items-center md:hidden">
-                            <nav>
-                                <ul class="flex items-center">
-                                    <li>
-                                        <a href="#home"
-                                            class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="#about"
-                                            class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">About</a>
-                                    </li>
-                                    </li>
-                                    <li>
-                                        <a href="#services"
-                                            class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="#portfolio"
-                                            class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Projects</a>
-                                    </li>
-  
-                                    <li><a href="#contact"
-                                            class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <a target="_blank" 
-                                href="https://docs.google.com/document/d/1FUWSUmakAXO_NV_eQoikh4JtpGGE8XJRMkQtIJg4lGk/edit?usp=sharing">
-                                <button
-                                    class="flex bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center ltr:ml-[32px] rtl:mr-[32px] transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1]">
-                                    <span
-                                        class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-download">
-                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                            <polyline points="7 10 12 15 17 10"></polyline>
-                                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                                        </svg>
-                                    </span>
-                                    <span
-                                        class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0">Download
-                                        CV</span>
-                                </button>
-                            </a>
-  
-                        </div>
-                        <div class="lg:hidden">
-                            <button class="offcanvas__header--menu__open--btn text-primary dark:text-white "
-                                data-offcanvas>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-menu">
-                                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                                </svg>
-                            </button>
-                        </div>
+    <!-- Header area start -->
+    <header class="absolute top-0 left-0 w-full">
+        <div class="py-5 header__sticky">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="hidden dark:block" src="assets/images/logo-light.png" alt="">
+                            <img class="dark:hidden" src="assets/images/logo.png" alt="">
+                        </a>
                     </div>
-                </div>
-                <!-- Start Offcanvas header menu -->
-                <div class="offcanvas__header lg:hidden dark:bg-gray-800">
-                    <div class="offcanvas__inner">
-                        <div class="offcanvas__logo">
-                            <a class="offcanvas__logo_link" href="index.html">
-                                <img class="dark:hidden" src="portfolio/assets/images/personal.png" alt="Grocee Logo"
-                                    width="158" height="36">
-                                <img class="hidden dark:block" src="portfolio/assets/images/personal.png"
-                                    alt="Grocee Logo" width="158" height="36">
-                            </a>
-                            <button class="offcanvas__close--btn dark:text-white" data-offcanvas>close</button>
-                        </div>
-                        <nav class="offcanvas__menu">
-                            <ul class="offcanvas__menu_ul">
-                                <li class="offcanvas__menu_li">
-                                    <a class="offcanvas__menu_item dark:text-white" href="#home">Home</a>
+                    <div class="flex items-center md:hidden">
+                        <nav>
+                            <ul class="flex items-center">
+                                <li>
+                                    <a href="#home"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Home</a>
                                 </li>
-                                <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
-                                        href="#about">About</a></li>
-                                <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
-                                        href="#services">Services</a></li>
-                                <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
-                                        href="#portfolio">Portfolio</a></li>
-                                <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
-                                        href="#contact">Contact</a></li>
+                                <li>
+                                    <a href="#about"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">About</a>
+                                </li>
+                                </li>
+                                <li>
+                                    <a href="#services"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Projects</a>
+                                </li>
+
+                                <li><a href="#contact"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">Contact</a>
+                                </li>
                             </ul>
-                            <a target="_blank" href="https://docs.google.com/document/d/1FUWSUmakAXO_NV_eQoikh4JtpGGE8XJRMkQtIJg4lGk/edit?usp=sharing"><button
-                                class="flex mx-auto bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1] mt-[30px]">
-                               <span
+                        </nav>
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/1eS1f9rklv9UcnTo_OaWd6rAFPkbUU_y1/view?usp=sharing">
+                            <button
+                                class="flex bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center ltr:ml-[32px] rtl:mr-[32px] transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1]">
+                                <span
                                     class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-download">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-download">
                                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                         <polyline points="7 10 12 15 17 10"></polyline>
                                         <line x1="12" y1="15" x2="12" y2="3"></line>
                                     </svg>
                                 </span>
-                                 <span
+                                <span
+                                    class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0">Download
+                                    CV</span>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="lg:hidden">
+                        <button class="offcanvas__header--menu__open--btn text-primary dark:text-white " data-offcanvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-menu">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Offcanvas header menu -->
+            <div class="offcanvas__header lg:hidden dark:bg-gray-800">
+                <div class="offcanvas__inner">
+                    <div class="offcanvas__logo">
+                        <a class="offcanvas__logo_link" href="index.html">
+                            <img class="dark:hidden" src="portfolio/assets/images/personal.png" alt="Grocee Logo"
+                                width="158" height="36">
+                            <img class="hidden dark:block" src="portfolio/assets/images/personal.png" alt="Grocee Logo"
+                                width="158" height="36">
+                        </a>
+                        <button class="offcanvas__close--btn dark:text-white" data-offcanvas>close</button>
+                    </div>
+                    <nav class="offcanvas__menu">
+                        <ul class="offcanvas__menu_ul">
+                            <li class="offcanvas__menu_li">
+                                <a class="offcanvas__menu_item dark:text-white" href="#home">Home</a>
+                            </li>
+                            <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
+                                    href="#about">About</a></li>
+                            <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
+                                    href="#services">Services</a></li>
+                            <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
+                                    href="#portfolio">Portfolio</a></li>
+                            <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
+                                    href="#contact">Contact</a></li>
+                        </ul>
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/1eS1f9rklv9UcnTo_OaWd6rAFPkbUU_y1/view?usp=sharing"><button
+                                class="flex mx-auto bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1] mt-[30px]">
+                                <span
+                                    class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-download">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                </span>
+                                <span
                                     class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0">Download
                                     CV</span>
                             </button></a>
-                        </nav>
-  
-                    </div>
+                    </nav>
+
                 </div>
-                <!-- End Offcanvas header menu -->
             </div>
-  
-  
-        </header>
-        <!-- Header area end -->
-<!-- ------------------main -----   -->
+            <!-- End Offcanvas header menu -->
+        </div>
+
+
+    </header>
+    <!-- Header area end -->
+    <!-- ------------------main -----   -->
     <!-- Main wrapper start -->
     <main>
         <!-- Hero section start -->
@@ -249,7 +239,8 @@
                             <div class="pl-[10px] pr-[15px]">
                                 <span
                                     class="block text-[20px] lg:text-[26px] font-bold text-primary dark:text-white font-heebo leading-[1]">6</span>
-                                <span class="block text-paragraph dark:text-slate-200 text-[17px]">Completed projects</span>
+                                <span class="block text-paragraph dark:text-slate-200 text-[17px]">Completed
+                                    projects</span>
                             </div>
                         </div>
 
@@ -261,11 +252,13 @@
                     <h2
                         class="lg:text-[60px] only-md:text-[40px] sm:text-[28px] font-bold font-heebo text-heading dark:text-white">
                         Noor Aldin!</h2>
-                    <h3 class="font-heebo font-normal text-primary dark:text-white">MIS Graduate and Full Stack Developer
+                    <h3 class="font-heebo font-normal text-primary dark:text-white">Full Stack Developer
                     </h3>
-                    <p class="lg:text-[20px] md:text-[16px] text-paragraph dark:text-slate-200 lg:mt-[18px] md:mt-[15px]">
-                        Driven by a passion for Management Information Systems and crafting innovative web solutions. Proficient in leveraging programming skills to analyze business requirements and develop efficient, technology-driven solutions.
-                    </p>
+                    <p
+                        class="lg:text-[20px] md:text-[16px] text-paragraph dark:text-slate-200 lg:mt-[18px] md:mt-[15px]">
+                        Full Stack Developer skilled in building dynamic web applications using Laravel, PHP, React,
+                        JavaScript, and MySQL. Focused on creating efficient, user-friendly solutions that meet
+                        real-world business needs." </p>
 
                     <div class="flex items-center gap-[18px] flex-wrap mt-[30px] sm:justify-center">
                         <a href="#about" class="btn outline-btn text-accent1 shrink-0">About Me</a>
@@ -302,78 +295,81 @@
                             SERVICES</span>
                         <h2
                             class="text-[28px] lg:text-[48px] font-bold font-heebo leading-[36px] lg:leading-[58px] text-[#000248] dark:text-white">
-                            What I Offer as a Full Stack Developer and MIS Specialist
+                            My Full Stack Development Expertise
                         </h2>
                     </div>
                     <div class="md:grow">
-                        <p class="text-[#636363] text-[17px] leading-[28px] lg:max-w-[472px] w-full dark:text-slate-200">
-                            With expertise in Full Stack Development and Management Information Systems, I provide tailored
-                            solutions that enhance business efficiency and technology integration.
+                        <p
+                            class="text-[#636363] text-[17px] leading-[28px] lg:max-w-[472px] w-full dark:text-slate-200">
+                            As a Full Stack Developer, I create tailored web solutions that streamline business
+                            processes and ensure seamless technology integration.
                         </p>
                     </div>
                 </div>
                 <!-- Section title end -->
 
-             <!-- Services list start -->
-<div class="grid gap-[30px] lg:grid-cols-3 grid-cols-1 only-md:grid-cols-2">
-    <!-- Single service start (Front-End Development) -->
-    <div
-        class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)] dark:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.2)] hover:translate-y-[-10px] transition duration-500">
-        <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px]">
-            <span
-                class="bg-[#48CDA0] text-white w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#79DAB9] before:opacity-[0.26]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="feather feather-monitor">
-                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                    <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-            </span>
-            <h3
-                class="text-primary dark:text-white text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">
-                Front-End Development</h3>
-            <p id="front-end-details" class="text-[17px] text-[#636363] dark:text-slate-200 hidden">
-                Creating interactive and visually appealing user interfaces using HTML, CSS, JavaScript, and modern
-                frameworks like React and Vue.js.
-            </p>
-            <a href="#"
-                class="link-button text-[#48CDA0] before:bg-[#48CDA0] mt-[15px] hover:text-[#333] dark:hover:text-white"
-                data-target="front-end-details">Read More</a>
-        </div>
-    </div>
-    <!-- Single service end -->
+                <!-- Services list start -->
+                <div class="grid gap-[30px] lg:grid-cols-3 grid-cols-1 only-md:grid-cols-2">
+                    <!-- Single service start (Front-End Development) -->
+                    <div
+                        class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)] dark:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.2)] hover:translate-y-[-10px] transition duration-500">
+                        <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px]">
+                            <span
+                                class="bg-[#48CDA0] text-white w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#79DAB9] before:opacity-[0.26]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-monitor">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </span>
+                            <h3
+                                class="text-primary dark:text-white text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">
+                                Front-End Development</h3>
+                            <p id="front-end-details" class="text-[17px] text-[#636363] dark:text-slate-200 hidden">
+                                Creating interactive and visually appealing user interfaces using HTML, CSS, JavaScript,
+                                and modern
+                                frameworks like React .
+                            </p>
+                            <a href="#"
+                                class="link-button text-[#48CDA0] before:bg-[#48CDA0] mt-[15px] hover:text-[#333] dark:hover:text-white"
+                                data-target="front-end-details">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Single service end -->
 
-    <!-- Single service start (Back-End Development) -->
-    <div
-        class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)] dark:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.2)] hover:translate-y-[-10px] transition duration-500">
-        <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px]">
-            <span
-                class="bg-[#ED5F38] text-white w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#ED5F38] before:opacity-[0.16]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="feather feather-server">
-                    <rect x="2" y="4" width="20" height="8" rx="2" ry="2"></rect>
-                    <rect x="2" y="12" width="20" height="8" rx="2" ry="2"></rect>
-                    <line x1="6" y1="8" x2="6.01" y2="8"></line>
-                    <line x1="6" y1="16" x2="6.01" y2="16"></line>
-                </svg>
-            </span>
-            <h3
-                class="text-primary dark:text-white text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">
-                Back-End Development</h3>
-            <p id="back-end-details" class="text-[17px] text-[#636363] dark:text-slate-200 hidden">
-                Building robust and scalable server-side logic using PHP, Laravel, and MySQL, ensuring seamless
-                integration with front-end applications.
-            </p>
-            <a href="#"
-                class="link-button text-[#ED5F38] before:bg-[#ED5F38] mt-[15px] hover:text-[#333] dark:hover:text-white"
-                data-target="back-end-details">Read More</a>
-        </div>
-    </div>
-    <!-- Single service end -->
-</div>
-<!-- Services list end -->
+                    <!-- Single service start (Back-End Development) -->
+                    <div
+                        class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)] dark:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.2)] hover:translate-y-[-10px] transition duration-500">
+                        <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px]">
+                            <span
+                                class="bg-[#ED5F38] text-white w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#ED5F38] before:opacity-[0.16]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-server">
+                                    <rect x="2" y="4" width="20" height="8" rx="2" ry="2"></rect>
+                                    <rect x="2" y="12" width="20" height="8" rx="2" ry="2"></rect>
+                                    <line x1="6" y1="8" x2="6.01" y2="8"></line>
+                                    <line x1="6" y1="16" x2="6.01" y2="16"></line>
+                                </svg>
+                            </span>
+                            <h3
+                                class="text-primary dark:text-white text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">
+                                Back-End Development</h3>
+                            <p id="back-end-details" class="text-[17px] text-[#636363] dark:text-slate-200 hidden">
+                                Developing robust and scalable server-side logic with PHP, Laravel, and MySQL, while
+                                ensuring smooth integration with front-end applications through well-structured RESTful
+                                APIs.
+                            </p>
+                            <a href="#"
+                                class="link-button text-[#ED5F38] before:bg-[#ED5F38] mt-[15px] hover:text-[#333] dark:hover:text-white"
+                                data-target="back-end-details">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Single service end -->
+                </div>
+                <!-- Services list end -->
 
             </div>
 
@@ -388,7 +384,8 @@
                 <div class="flex justify-between sm:flex-wrap sm:flex-col-reverse">
                     <div class="w-full lg:max-w-[550px]">
                         <div>
-                            <span class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">ABOUT
+                            <span
+                                class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">ABOUT
                                 ME</span>
                             <h2
                                 class="text-[24px] only-md:text-[32px] lg:text-[48px] font-bold font-heebo leading-[36px] lg:leading-[58px] text-[#000248] dark:text-white ltr:lg:pr-[50px] rtl:lg:pl-[50px]">
@@ -464,7 +461,8 @@
                 <div
                     class="flex justify-between items-center gap-[20px] lg:gap-[30px] mb-[55px] md:flex-wrap md:text-center">
                     <div class="max-w-full lg:max-w-[575px]  w-full">
-                        <span class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">EXPERICNCE
+                        <span
+                            class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">EXPERICNCE
                             AND EDUCATION</span>
                         <h2
                             class="text:[28px] lg:text-[48px] font-bold font-heebo leading-[36x] lg:leading-[58px] text-[#000248] dark:text-white">
@@ -476,7 +474,7 @@
                         <!-- <p class="text-[#636363] dark:text-slate-200 text-[17px] leading-[28px] lg:max-w-[472px] w-full">
                             Promote your blog posts, case udie, and product ouncems
                             with the the branded videoscustomers coming back for services Makes best effort.</p> -->
-                    </div> 
+                    </div>
                 </div>
                 <!-- Section title end -->
 
@@ -487,7 +485,8 @@
                     <div class="w-full max-w-[50%] sm:max-w-full flex-grow">
                         <div class="relative ltr:pl-[30px] rtl:pr-[30px]">
                             <!-- border line -->
-                            <div class="absolute w-[1px] ltr:left-0 rtl:right-0 top-[10px] bottom-[5px] bg-accent1"></div>
+                            <div class="absolute w-[1px] ltr:left-0 rtl:right-0 top-[10px] bottom-[5px] bg-accent1">
+                            </div>
                             <!-- border line  end-->
 
                             <!-- Single resume start -->
@@ -515,13 +514,53 @@
                                             class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">Orange
                                             Coding Academy</span>
                                     </div>
-                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">Acquired hands-on
+                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">Acquired
+                                        hands-on
                                         experience in developing full-stack web applications using technologies such as
                                         Laravel, PHP, JavaScript, HTML, and CSS. Gained skills in database management,
-                                        version control with Git, and implementing responsive and user-friendly interfaces.
+                                        version control with Git, and implementing responsive and user-friendly
+                                        interfaces.
                                     </p>
                                     <span
-                                        class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2024</span>
+                                        class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">May
+                                        2024 — November 2024</span>
+                                </div>
+                            </div>
+                            <!-- Single resume end -->
+                            <!-- Single resume start -->
+                            <div
+                                class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px] rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative">
+                                <span
+                                    class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                                <div class="w-[70px] h-[70px]">
+                                    <span
+                                        class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                                        <svg width="25" height="40" fill="currentColor" stroke="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                                    <div
+                                        class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                                        <h3
+                                            class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary dark:text-white">
+                                            Full Stack Developer Intern</h3>
+                                        <span
+                                            class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">PCM
+                                            Group</span>
+                                    </div>
+                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">Built and
+                                        Optimized web applications using React for front-end and Laravel for back-end,
+                                        creating responsive interfaces and efficient RESTful APIs. Collaborated with
+                                        teams to develop scalable solutions, improve performance, and uphold high
+                                        standards of code quality.
+                                    </p>
+                                    <span
+                                        class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">
+                                        Feb 2025 - May 2025</span>
                                 </div>
                             </div>
                             <!-- Single resume end -->
@@ -535,7 +574,8 @@
                     <div class="w-full max-w-[50%] sm:max-w-full flex-grow sm:mt-[40px]">
                         <div class="relative ltr:pl-[30px] rtl:pr-[30px]">
                             <!-- border line -->
-                            <div class="absolute w-[1px] ltr:left-0 rtl:right-0 top-[10px] bottom-[5px] bg-accent1"></div>
+                            <div class="absolute w-[1px] ltr:left-0 rtl:right-0 top-[10px] bottom-[5px] bg-accent1">
+                            </div>
                             <!-- border line  end-->
 
                             <!-- Single resume start -->
@@ -563,7 +603,8 @@
                                             class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">University
                                             of Jordan</span>
                                     </div>
-                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">Earned a degree in
+                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">Earned a degree
+                                        in
                                         Management Information Systems with a focus on system analysis and business
                                         integration.</p>
                                     <span
@@ -596,7 +637,8 @@
                                             class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">Galaxy
                                             organization</span>
                                     </div>
-                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">Currently enrolled
+                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">Currently
+                                        enrolled
                                         in the Alibaba Cloud Computing and AI Training Program, focusing on cloud
                                         infrastructure, machine learning, and AI-driven solutions.</p>
 
@@ -660,7 +702,7 @@
                         <!-- Single skill start -->
                         <div class="relative mb-7">
                             <div class="flex justify-between mb-1">
-                                <span class="text-lg font-medium text-primary dark:text-white">Power BI</span>
+                                <span class="text-lg font-medium text-primary dark:text-white">Bootstrap</span>
                                 <span
                                     class="text-xs font-medium text-white bg-accent1 dark:text-white absolute py-1.5 px-1.5 bottom-6 rounded-sm before:absolute before:content-[''] before:bg-accent1 before:w-5 before:h-5 before:clip-polygon before:top-4 before:left-2 before:-z-10 ltr:left-[calc(70%_-_20px)] rtl:right-[calc(70%_-_20px)]">70%</span>
                             </div>
@@ -761,16 +803,16 @@
                             class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">PROJECTS</span>
                         <h2
                             class="text-[28px] lg:text-[48px] font-bold font-heebo leading-[36px] lg:leading-[58px] text-[#000248] dark:text-white">
-                            Never compromise on
-                            portfolio quality
+                            Ensure the highest quality standards in all projects.
                         </h2>
                     </div>
                     <div class="md:grow">
-                        <p class="text-[#636363] dark:text-slate-200 text-[17px] leading-[28px] lg:max-w-[472px] w-full">
-                            My projects showcase a commitment to creativity, precision, and innovation.
-                            Each one reflects my dedication to delivering high-quality solutions that
-                            address real-world challenges. Explore this portfolio to discover the unique
-                            stories behind each project and the impactful results they achieved.
+                        <p
+                            class="text-[#636363] dark:text-slate-200 text-[17px] leading-[28px] lg:max-w-[472px] w-full">
+                            My portfolio highlights a strong focus on creativity, precision, and innovation. Each
+                            project demonstrates my commitment to delivering high-quality solutions that effectively
+                            address complex challenges. Explore this collection to learn about the strategic approaches
+                            and impactful results achieved in each project.
                         </p>
                     </div>
                 </div>
@@ -825,12 +867,13 @@
                                         </div>
                                     </span>
                                     <div class="w-full portfolio__image--card">
-                                        <img class="w-full transition duration-300" src="portfolio/assets/images/mac.png"
-                                            alt="ff">
+                                        <img class="w-full transition duration-300"
+                                            src="portfolio/assets/images/mac.png" alt="ff">
                                     </div>
                                 </a>
                                 <!-- Portfolio popup start -->
-                                <div class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
                                     <div
                                         class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
                                     </div>
@@ -867,10 +910,8 @@
                                                                     d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
                                                                 </path>
                                                                 <polyline points="14 2 14 8 20 8"></polyline>
-                                                                <line x1="16" y1="13" x2="8"
-                                                                    y2="13"></line>
-                                                                <line x1="16" y1="17" x2="8"
-                                                                    y2="17"></line>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
                                                                 <polyline points="10 9 9 9 8 9"></polyline>
                                                             </svg>
                                                         </span>
@@ -901,7 +942,8 @@
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
                                                                 class="feather feather-user">
-                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                                </path>
                                                                 <circle cx="12" cy="7" r="4"></circle>
                                                             </svg>
                                                         </span>
@@ -918,15 +960,10 @@
                                                 technologies for dynamic data processing and intuitive user interfaces.
 
                                             </p>
-                                            <div class="pr-3 flex justify-center items-center mt-6">
-                                                <iframe class="rounded-xl shadow-lg overflow-hidden" width="100%"
-                                                    height="auto" src="https://www.youtube.com/embed/Sk4nmL0lnIM"
-                                                    frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                    allowfullscreen>
-                                                </iframe>
+                                            <div class="pr-3">
+                                                <img class="max-w-full h-auto rounded-xl mt-6 mx-auto"
+                                                    src="portfolio/assets/images/macq.jpg" alt="portfolio image">
                                             </div>
-
 
                                         </div>
                                     </div>
@@ -971,7 +1008,8 @@
                                 </a>
 
                                 <!-- Portfolio popup start -->
-                                <div class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
                                     <div
                                         class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
                                     </div>
@@ -1008,10 +1046,8 @@
                                                                     d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
                                                                 </path>
                                                                 <polyline points="14 2 14 8 20 8"></polyline>
-                                                                <line x1="16" y1="13" x2="8"
-                                                                    y2="13"></line>
-                                                                <line x1="16" y1="17" x2="8"
-                                                                    y2="17"></line>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
                                                                 <polyline points="10 9 9 9 8 9"></polyline>
                                                             </svg>
                                                         </span>
@@ -1043,7 +1079,8 @@
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
                                                                 class="feather feather-user">
-                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                                </path>
                                                                 <circle cx="12" cy="7" r="4"></circle>
                                                             </svg>
                                                         </span>
@@ -1110,7 +1147,8 @@
                                     </div>
                                 </a>
                                 <!-- Portfolio popup start -->
-                                <div class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
                                     <div
                                         class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
                                     </div>
@@ -1147,10 +1185,8 @@
                                                                     d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
                                                                 </path>
                                                                 <polyline points="14 2 14 8 20 8"></polyline>
-                                                                <line x1="16" y1="13" x2="8"
-                                                                    y2="13"></line>
-                                                                <line x1="16" y1="17" x2="8"
-                                                                    y2="17"></line>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
                                                                 <polyline points="10 9 9 9 8 9"></polyline>
                                                             </svg>
                                                         </span>
@@ -1181,7 +1217,8 @@
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
                                                                 class="feather feather-user">
-                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                                </path>
                                                                 <circle cx="12" cy="7" r="4"></circle>
                                                             </svg>
                                                         </span>
@@ -1193,7 +1230,8 @@
                                             </div>
 
                                             <p class="dark:text-white font-normal text-[17px]">
-                                                It Is a web application designed to provide car owners with a convenient and
+                                                It Is a web application designed to provide car owners with a convenient
+                                                and
                                                 effective way to save time and effort by allowing them to book car wash
                                                 services from their personal computers and mobile devices. Additionally,
                                                 this web application offers a set of other services that can be added
@@ -1233,20 +1271,21 @@
                                             </span>
                                             <h3
                                                 class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">
-                                                ABC quiz </h3>
+                                                EnglishAce quiz </h3>
                                             <span
                                                 class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3">Enhance
                                                 your English with my interactive, feedback-driven web app!</span>
                                         </div>
                                     </span>
                                     <div class="w-full portfolio__image--card">
-                                        <img class="w-full transition duration-300" src="portfolio/assets/images/Eng.jpg"
-                                            alt="">
+                                        <img class="w-full transition duration-300"
+                                            src="portfolio/assets/images/Eng.jpg" alt="">
                                     </div>
                                 </a>
 
                                 <!-- Portfolio popup start -->
-                                <div class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
                                     <div
                                         class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
                                     </div>
@@ -1268,7 +1307,7 @@
                                                 </svg>
                                             </button>
                                             <h2 class="text-accent1 text-center font-bold">
-                                                ABC quiz Project
+                                                EnglishAce quiz Project
                                             </h2>
                                             <div class="grid grid-cols-1 lg:grid-cols-2 my-6">
                                                 <div class="space-y-2">
@@ -1283,10 +1322,8 @@
                                                                     d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
                                                                 </path>
                                                                 <polyline points="14 2 14 8 20 8"></polyline>
-                                                                <line x1="16" y1="13" x2="8"
-                                                                    y2="13"></line>
-                                                                <line x1="16" y1="17" x2="8"
-                                                                    y2="17"></line>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
                                                                 <polyline points="10 9 9 9 8 9"></polyline>
                                                             </svg>
                                                         </span>
@@ -1305,7 +1342,7 @@
                                                             </svg>
                                                         </span>
                                                         Languages :&nbsp;
-                                                        <span class="font-medium">HTML ,CSS , JS</span>
+                                                        <span class="font-medium">HTML ,CSS , React</span>
                                                     </p>
                                                 </div>
 
@@ -1317,7 +1354,8 @@
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
                                                                 class="feather feather-user">
-                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                                </path>
                                                                 <circle cx="12" cy="7" r="4"></circle>
                                                             </svg>
                                                         </span>
@@ -1328,15 +1366,20 @@
                                             </div>
 
                                             <p class="dark:text-white font-normal text-[17px]">
-                                                This web application, built with HTML, CSS, and JavaScript, evaluates
-                                                students' English skills in reading, writing, listening, and speaking. It
-                                                features interactive quizzes, real-time feedback, and a responsive,
-                                                user-friendly design to make learning engaging and effective.
+                                                Built with React, this app assesses English skills through interactive
+                                                quizzes and real-time feedback, helping users identify their proficiency
+                                                level.
                                             </p>
                                             <div class="pr-3">
-                                                <img class="max-w-full h-auto rounded-xl mt-6 mx-auto"
-                                                    src="portfolio/assets/images/Eng.jpg" alt="portfolio image">
+                                                <a href="https://english-ace-test-app.lovable.app/" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <img src="portfolio/assets/images/TEST.png"
+                                                        alt="English Ace Test App"
+                                                        class="max-w-full h-auto rounded-xl mt-6 mx-auto transition-transform duration-300 hover:scale-105 hover:opacity-90">
+                                                </a>
                                             </div>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -1381,7 +1424,8 @@
                                 </a>
 
                                 <!-- Portfolio popup start -->
-                                <div class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
                                     <div
                                         class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
                                     </div>
@@ -1418,10 +1462,8 @@
                                                                     d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
                                                                 </path>
                                                                 <polyline points="14 2 14 8 20 8"></polyline>
-                                                                <line x1="16" y1="13" x2="8"
-                                                                    y2="13"></line>
-                                                                <line x1="16" y1="17" x2="8"
-                                                                    y2="17"></line>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
                                                                 <polyline points="10 9 9 9 8 9"></polyline>
                                                             </svg>
                                                         </span>
@@ -1452,7 +1494,8 @@
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
                                                                 class="feather feather-user">
-                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                                </path>
                                                                 <circle cx="12" cy="7" r="4"></circle>
                                                             </svg>
                                                         </span>
@@ -1463,9 +1506,12 @@
                                             </div>
 
                                             <p class="dark:text-white font-normal text-[17px]">
-                                                NextStep bridges the gap between education and the evolving job market by
-                                                connecting recent graduates and those with limited experience to mentors and
-                                                employers, offering guidance, skill development, and career opportunities.
+                                                NextStep bridges the gap between education and the evolving job market
+                                                by
+                                                connecting recent graduates and those with limited experience to mentors
+                                                and
+                                                employers, offering guidance, skill development, and career
+                                                opportunities.
                                             </p>
                                             <div class="pr-3 flex justify-center items-center mt-6">
                                                 <iframe class="rounded-xl shadow-lg" width="100%" height="315"
@@ -1510,7 +1556,8 @@
                                                 Orange Academy Graduate Tracker</h3>
                                             <span
                                                 class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3">Empowering
-                                                the Next Generation of Coders: See How Orange Academy is Transforming Dreams
+                                                the Next Generation of Coders: See How Orange Academy is Transforming
+                                                Dreams
                                                 into Careers!</span>
                                         </div>
                                     </span>
@@ -1520,7 +1567,8 @@
                                     </div>
                                 </a>
                                 <!-- Portfolio popup start -->
-                                <div class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
                                     <div
                                         class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
                                     </div>
@@ -1557,10 +1605,8 @@
                                                                     d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
                                                                 </path>
                                                                 <polyline points="14 2 14 8 20 8"></polyline>
-                                                                <line x1="16" y1="13" x2="8"
-                                                                    y2="13"></line>
-                                                                <line x1="16" y1="17" x2="8"
-                                                                    y2="17"></line>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
                                                                 <polyline points="10 9 9 9 8 9"></polyline>
                                                             </svg>
                                                         </span>
@@ -1591,7 +1637,8 @@
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
                                                                 class="feather feather-user">
-                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                                </path>
                                                                 <circle cx="12" cy="7" r="4"></circle>
                                                             </svg>
                                                         </span>
@@ -1604,9 +1651,12 @@
                                             <p class="dark:text-white font-normal text-[17px]">
                                                 We developed a robust tracking system for Orange Academy for
                                                 Programming, the Middle East's pioneering free training academy that
-                                                equips young people with cutting-edge programming skills and career-ready
-                                                expertise. This system monitors cohort graduations and employment outcomes,
-                                                providing valuable insights into the academy's success in bridging the gap
+                                                equips young people with cutting-edge programming skills and
+                                                career-ready
+                                                expertise. This system monitors cohort graduations and employment
+                                                outcomes,
+                                                providing valuable insights into the academy's success in bridging the
+                                                gap
                                                 between education and the job market. With detailed data on graduate
                                                 achievements and opportunities, the project underscores a commitment to
                                                 driving positive impact through innovation and technology.
@@ -1659,11 +1709,15 @@
                         <!-- Section title end -->
 
                         <!-- from inner start-->
-                          <div class="lotti" >
-                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                            <dotlottie-player src="https://lottie.host/876a7131-3532-4979-8245-594ab22b9407/Ffe03pQ0er.lottie" background="transparent" speed="1" style="width: 400px; height: 400px" loop autoplay></dotlottie-player>
+                        <div class="lotti">
+                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                                type="module"></script>
+                            <dotlottie-player
+                                src="https://lottie.host/876a7131-3532-4979-8245-594ab22b9407/Ffe03pQ0er.lottie"
+                                background="transparent" speed="1" style="width: 400px; height: 400px" loop
+                                autoplay></dotlottie-player>
                             <!-- from inner end -->
-                         </div>
+                        </div>
                     </div>
 
                     <div
@@ -1681,7 +1735,8 @@
                                 </span>
                             </div>
                             <div class="ltr:pl-6 rtl:pr-6">
-                                <h3 class="text-[28px] md:text-[22px] font-heebo font-bold text-primary dark:text-white">
+                                <h3
+                                    class="text-[28px] md:text-[22px] font-heebo font-bold text-primary dark:text-white">
                                     Call Me
                                 </h3>
                                 <span class="text-primary dark:text-slate-200 text-[22px] md:text-[18px] mt-5">
@@ -1706,9 +1761,9 @@
                             <div>
                                 <span
                                     class="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] bg-accent1 text-white flex items-center rounded-full justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-mail">
                                         <path
                                             d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
                                         </path>
@@ -1717,7 +1772,8 @@
                                 </span>
                             </div>
                             <div class="ltr:pl-6 rtl:pr-6">
-                                <h3 class="text-[28px] md:text-[22px] font-heebo font-bold text-primary dark:text-white">
+                                <h3
+                                    class="text-[28px] md:text-[22px] font-heebo font-bold text-primary dark:text-white">
                                     Email Us
                                 </h3>
                                 <span class="text-primary dark:text-slate-200 text-[22px] md:text-[18px] mt-5">
@@ -1749,7 +1805,8 @@
                                 </span>
                             </div>
                             <div class="ltr:pl-6 rtl:pr-6">
-                                <h3 class="text-[28px] md:text-[22px] font-heebo font-bold text-primary dark:text-white">
+                                <h3
+                                    class="text-[28px] md:text-[22px] font-heebo font-bold text-primary dark:text-white">
                                     Address</h3>
                                 <span class="text-primary  dark:text-slate-200 text-[22px] md:text-[18px] mt-5">Ain
                                     Al-Basha, Balqa, Jordan
@@ -1770,9 +1827,9 @@
 
     </main>
     <!-- Main wrapper end -->
-<!-- end main -->
+    <!-- end main -->
 
-<!-- footer  -->
+    <!-- footer  -->
     <!-- Footer start -->
     <footer
         class="py-[50px] bg-cover bg-no-repeat bg-center bg-[url('../images/footer-bg.html')] bg-[#ffffff] dark:bg-[url('../images/footer-bg-dark.html')] dark:bg-dark_primary_bg dark:border-t dark:border-dark_accent1">
@@ -1789,71 +1846,71 @@
                                 </path>
                             </svg>
                         </span> by <span class=" px-[3px]"><a class="text-accent1 hover:font-bold" href="#">Noor
-                                Aldin</a></span>© 2024</p>
+                                Aldin</a></span>© 2025</p>
                 </div>
-           
+
             </div>
         </div>
 
     </footer>
 
-   <button id="scroll__top"
-   class="fixed bottom-12 ltr:right-5 rtl:left-5 z-50 bg-accent1 text-white shadow-[0_2px_22px_rgba(0,0,0,0.16)] cursor-pointer translate-y-12 opacity-0 invisible transition-all duration-300 leading-[1] w-11 h-11 rounded-full border-none flex items-center justify-center hover:bg-primary dark:hover:bg-dark_accent1">
-   <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 leading-[1]" viewBox="0 0 512 512">
-       <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="48"
-           d="M112 244l144-144 144 144M256 120v292" />
-   </svg>
-</button>
-<!-- Back to top end -->
+    <button id="scroll__top"
+        class="fixed bottom-12 ltr:right-5 rtl:left-5 z-50 bg-accent1 text-white shadow-[0_2px_22px_rgba(0,0,0,0.16)] cursor-pointer translate-y-12 opacity-0 invisible transition-all duration-300 leading-[1] w-11 h-11 rounded-full border-none flex items-center justify-center hover:bg-primary dark:hover:bg-dark_accent1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-6 leading-[1]" viewBox="0 0 512 512">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="48"
+                d="M112 244l144-144 144 144M256 120v292" />
+        </svg>
+    </button>
+    <!-- Back to top end -->
 
 
 
 
 
 
-<script src="../../../../cdn.jsdelivr.net/npm/swiper%408/swiper-bundle.min.js"></script>
+    <script src="../../../../cdn.jsdelivr.net/npm/swiper%408/swiper-bundle.min.js"></script>
 
 
-<script src="portfolio/assets/js/imagesloaded.pkgd.min.js" defer></script>
+    <script src="portfolio/assets/js/imagesloaded.pkgd.min.js" defer></script>
 
 
-<script src="portfolio/assets/js/isotope.pkgd.min.js" defer></script>
+    <script src="portfolio/assets/js/isotope.pkgd.min.js" defer></script>
 
 
-<script src="portfolio/assets/js/script.js" defer></script>
+    <script src="portfolio/assets/js/script.js" defer></script>
 
 
-<script src="main.js" defer></script>
+    <script src="main.js" defer></script>
 
-<script>
-   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-   if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia(
-           "(prefers-color-scheme: dark)").matches)) {
-       document.getElementById("light__to--dark")?.classList.add("dark--version");
-   }
-   if (localStorage.getItem("theme-color") === "light") {
-       document.getElementById("light__to--dark")?.classList.remove("dark--version");
-   }
-</script>
-<script>
-   document.addEventListener("DOMContentLoaded", () => {
-       const links = document.querySelectorAll(".link-button");
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia(
+            "(prefers-color-scheme: dark)").matches)) {
+            document.getElementById("light__to--dark")?.classList.add("dark--version");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.getElementById("light__to--dark")?.classList.remove("dark--version");
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll(".link-button");
 
-       links.forEach(link => {
-           link.addEventListener("click", (e) => {
-               e.preventDefault();
-               const targetId = link.getAttribute("data-target");
-               const targetElement = document.getElementById(targetId);
+            links.forEach(link => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute("data-target");
+                    const targetElement = document.getElementById(targetId);
 
-               if (targetElement) {
-                   targetElement.classList.toggle("hidden");
-                   link.textContent = targetElement.classList.contains("hidden") ?
-                       "Read More" : "Read Less";
-               }
-           });
-       });
-   });
-</script>
+                    if (targetElement) {
+                        targetElement.classList.toggle("hidden");
+                        link.textContent = targetElement.classList.contains("hidden") ?
+                            "Read More" : "Read Less";
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 
